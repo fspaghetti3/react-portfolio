@@ -1,4 +1,5 @@
 import Nav from './Nav';
+import PropTypes from  'prop-types'
 
 function Header({ currentSection, setCurrentSection }) {
   return (
@@ -8,5 +9,10 @@ function Header({ currentSection, setCurrentSection }) {
     </header>
   );
 }
+
+Header.propTypes = {
+  currentSection: PropTypes.string,
+  setCurrentSection: PropTypes.func
+};
 
 export default Header;

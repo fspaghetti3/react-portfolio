@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 
+
+
 function Nav() {
   const location = useLocation();
   const navTitles = [
