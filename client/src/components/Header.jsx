@@ -4,8 +4,8 @@ import PropTypes from  'prop-types'
 function Header({ currentSection, setCurrentSection }) {
   return (
     <header>
-      <h1>Frederick Solleder</h1>
       <Nav currentSection={currentSection} setCurrentSection={setCurrentSection} />
+      <h1>Frederick Solleder</h1>
     </header>
   );
 }
