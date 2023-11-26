@@ -1,9 +1,7 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Main from './components/Main'
 import './App.css';
 
 function App() {
@@ -11,13 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <main>
-          <Switch>
-            <Route path="/" exact component={AboutMe} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
-          </Switch>
-        </main>
+        <Main />
         <Footer />
       </div>
     </Router>

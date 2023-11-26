@@ -9,15 +9,17 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to right, blue, green);
+    background-image: url('./assets/backgroundImage.jpg') ;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh; 
     font-family: Arial, sans-serif;
-    color: white; 
+    color: white;
 }
+
+
 
 header {
     position: fixed;
@@ -27,6 +29,16 @@ header {
     background-color: #f8f8f800; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
+}
+
+header > h1 {
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 25px;
+    color: #fafafa;
+    background: linear-gradient(180deg, rgba(83, 85, 87, 0.9) 0%, rgba(14, 15, 15, 0.9) 100%);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -55,3 +67,72 @@ nav > a:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
 }
 
+section {
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: #fafafa;
+    background: linear-gradient(180deg, rgba(83, 85, 87, 0.9) 0%, rgba(14, 15, 15, 0.9) 100%);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+
+.blade-container {
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+}
+
+.blade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 300px; 
+    transform: translate(-50%, -50%) scale(0.95);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+.blade:nth-child(1) {
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.93);
+}
+
+.blade:nth-child(2) {
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(0.94);
+}
+
+.blade:nth-child(3) {
+    z-index: 3;
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+
+.blade-active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 4;
+}
