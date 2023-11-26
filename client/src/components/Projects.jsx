@@ -10,6 +10,7 @@ function Projects() {
 
   return (
     <section>
+      <h2>Projects</h2>
       {projects.map((project, index) => (
         <div key={index}>
           <img src={project.image} alt={project.title} />
