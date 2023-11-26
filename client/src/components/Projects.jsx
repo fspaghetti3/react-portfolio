@@ -1,7 +1,12 @@
-import React from 'react';
-
 function Projects() {
-  const projects = [];
+  const projects = [
+    {
+      title: "Thing One",
+      image: "",
+      liveLink: "",
+      githubLink: ""
+    },
+  ];
 
   return (
     <section>

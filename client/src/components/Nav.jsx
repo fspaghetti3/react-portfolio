@@ -5,7 +5,8 @@ function Nav() {
   const navTitles = [
     { title: 'About Me', path: '/' },
     { title: 'Contact', path: '/contact' },
-    { title: 'Resume', path: '/resume' }
+    { title: 'Resume', path: '/resume' },
+    { title: 'Projects', path: '/projects'}
   ];
 
   return (

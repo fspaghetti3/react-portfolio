@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Resume from './Resume';
+import Projects from './Projects'
 
 function Main() {
   const location = useLocation();
@@ -12,16 +13,23 @@ function Main() {
     setActiveRoute(location.pathname);
   }, [location]);
 
+  const getBladeClass = (path) => {
+    return `blade ${activeRoute === path ? 'blade-active' : ''}`;
+  };
+
   return (
     <main className="blade-container">
-      <div className={`blade ${activeRoute === '/' ? 'blade-active' : ''}`}>
+      <div className={getBladeClass('/')}>
         <AboutMe />
       </div>
-      <div className={`blade ${activeRoute === '/contact' ? 'blade-active' : ''}`}>
+      <div className={getBladeClass('/contact')}>
         <Contact />
       </div>
-      <div className={`blade ${activeRoute === '/resume' ? 'blade-active' : ''}`}>
+      <div className={getBladeClass('/resume')}>
         <Resume />
+      </div>
+      <div className={getBladeClass('/projects')}>
+        <Projects />
       </div>
     </main>
   );
