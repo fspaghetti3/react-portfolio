@@ -2,9 +2,11 @@ function AboutMe() {
   return (
     <section>
       <h2>About Me</h2>
-      <img src="pic-of-me" alt="Frederick Solleder" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Hello! My name is Frederick Solleder, I am currently studying Full-Stack Web Development @ SMU/edXs Full-Stack program!
+      </p>
+      <p>
+        I am 19 years old, and I live in the DFW Metroplex, TX.
       </p>
     </section>
   );

@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    
 }
 
 body {
@@ -71,9 +72,9 @@ section {
     padding: 25px;
     width: 100%;
     box-sizing: border-box;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 5px;
     color: #fafafa;
     background: linear-gradient(180deg, rgb(11, 68, 122) 0%, rgba(145, 112, 62, 0.904) 100%);
@@ -141,4 +142,10 @@ form {
 /* PROJECTS */
 .blade:nth-child(4):not(.blade-active) {
     transform: translateX(-50%) translateY(100%) scale(0.7);
+}
+
+a:-webkit-any-link {
+    display: flex;
+    flex-direction: column;
+    color: white;
 }

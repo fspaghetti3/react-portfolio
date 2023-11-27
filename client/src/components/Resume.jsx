@@ -5,9 +5,11 @@ function Resume() {
       <a href="resume-path.pdf" download>Download My Resume!</a>
       <h3>Proficiencies</h3>
       <ul>
+        <li>HTML/CSS</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>Node.js</li>
+        <li>Node.js/Express</li>
+        <li>MySQL/Mongo</li>
       </ul>
     </section>
   );
