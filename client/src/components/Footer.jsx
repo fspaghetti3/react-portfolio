@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      {/* Links to SM stuffs */}
+      <p>g</p>
     </footer>
   );
 }
